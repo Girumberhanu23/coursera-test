@@ -1,0 +1,72 @@
+/* Base Style */
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+h1 {
+	text-align: center;
+}
+p {
+	clear: right;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	height: auto;
+}
+.row {
+	width: 100%;
+}
+h4 {
+	border: 1px solid black;
+	margin: 0;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	padding: 5px 10px;
+	float: right;
+}
+#p1 {
+	background-color: pink;
+}
+#p2 {
+	background-color: red;
+	color: white;
+}
+#p3 {
+	background-color: yellow;
+}
+.col-lg-4, .col-md-6, .col-md-12 {
+	background-color: gray;
+	float: left;
+	border: 1px solid black;
+
+}
+/***** Large Devices *****/
+@media (min-width: 992px) {
+.col-lg-4{
+	width: 33%;
+	
+	margin-right: 2px;
+}
+}
+/***** Medium Devices *****/
+@media (min-width: 768px) and (max-width: 991px){
+
+.col-md-6{
+	width: 50%;
+	margin-bottom: 10px;
+	
+	
+}
+.col-md-12{
+	width: 100%;
+}
+}
+/***** Small Devices *****/
+@media (max-width: 767px) {
+.col-lg-4{
+	width: 100%;
+	margin-bottom: 10px;
+	
+}
+}
